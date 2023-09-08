@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8b8b8b;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 50px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.link {
+    display: block;
+    color:black;
+    font-size: 22px;
+    padding: 10px 25px ;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.shopping-cart {
+    color: rgb(11, 11, 56);
+}
+
+@media only screen and (max-width:1320px) {
+   header {
+    padding: 0 50px; 
+   } 
+}
+@media only screen and (max-width:1100px) {
+   header {
+    padding: 0 30px; 
+   } 
+}
+@media only screen and (max-width:900px) {
+    .hamburger {
+            display: block;
+            cursor: pointer;
+     }
+
+     .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        margin: 6px 0;
+     }
+     .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgb(202, 197, 189);
+        transition: 0.2s;
+         overflow: hidden; 
+     }
+     .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 34px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+     /*    opacity: 0; */
+     }
+
+     .responsive_nav {
+        height: 300px;
+        opacity: 1;
+        transition: 0.s;
+     }
+
+     .link {
+        margin-bottom: 12px;
+     }
+}
+
+@media only screen and (max-width:572px ) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+ }
+
+ .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+ }
+ .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(202, 197, 189);
+    transition: 0.2s;
+     overflow: hidden; 
+ }
+ .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 34px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+ /*    opacity: 0; */
+ }
+
+ .responsive_nav {
+    height: 300px;
+    opacity: 1;
+    transition: 0.s;
+ }
+
+ .link {
+    margin-bottom: 12px;
+}
+}
+
+
+
+/* Styles pour le dropdown */
+.category-link {
+    cursor: pointer;
+  }
+  
+  .category-link.open {
+    color: #007bff; /* Couleur différente lorsque le dropdown est ouvert */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .open .dropdown-content {
+    display: block;
+  }
+  
+  /* Styles pour les sous-liens */
+  .sub-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .sub-link:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles pour les écrans plus petits */
+  @media screen and (max-width: 768px) {
+    .nav-bar .sub-link {
+      padding: 10px; /* Ajustez la marge intérieure pour les écrans plus petits */
+      font-size: 16px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+  }
+  
+  
